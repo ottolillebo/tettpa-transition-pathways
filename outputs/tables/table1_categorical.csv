@@ -1,0 +1,28 @@
+variable,level,n,percent
+Administratively recorded sex,Boy,886,60.35422343324251
+Administratively recorded sex,Girl,582,39.64577656675749
+Service tier,Combined school,118,8.038147138964577
+Service tier,Kindergarten,455,30.994550408719345
+Service tier,Lower secondary,154,10.490463215258856
+Service tier,Primary school,573,39.032697547683924
+Service tier,Unknown,168,11.444141689373296
+Presenting-concern group,Attention/neurodevelopment,427,29.087193460490465
+Presenting-concern group,Complex/medical/other,96,6.539509536784741
+Presenting-concern group,Language/speech/communication,191,13.010899182561309
+Presenting-concern group,Learning/academic,83,5.653950953678474
+Presenting-concern group,Missing,39,2.656675749318801
+Presenting-concern group,Not clarified,432,29.427792915531334
+Presenting-concern group,Social/emotional/interaction,200,13.623978201634877
+District context,Other PPT districts,788,53.678474114441414
+District context,Tett på districts,680,46.321525885558586
+PPT district,Heimdal,381,25.95367847411444
+PPT district,Lerkendal,407,27.724795640326974
+PPT district,Midtbyen,299,20.367847411444142
+PPT district,Østbyen,381,25.95367847411444
+Half-year entry cohort,2023H1,286,19.482288828337875
+Half-year entry cohort,2023H2,288,19.618528610354222
+Half-year entry cohort,2024H1,372,25.340599455040874
+Half-year entry cohort,2024H2,220,14.986376021798366
+Half-year entry cohort,2025H1,302,20.572207084468666
+Prior observed non-SV PPT case,No,1371,93.39237057220708
+Prior observed non-SV PPT case,Yes,97,6.607629427792916

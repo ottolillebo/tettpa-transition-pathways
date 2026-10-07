@@ -1,0 +1,25 @@
+# Restricted source data
+data/restricted/
+**/data_provenance.csv
+**/organization_service_tier_mapping.csv
+*.xls
+*.xlsx
+*.xlsm
+*.sav
+*.dta
+*.rds
+*.RData
+*.parquet
+*.feather
+
+# Local paths, logs, and caches
+.Rhistory
+.RData
+.Rproj.user/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# OS/editor
+.DS_Store
+Thumbs.db

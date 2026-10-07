@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this reproducibility package, please cite the associated manuscript."
+title: "Tett pa transition pathways reproducibility package"
+type: software
+authors:
+  - family-names: "AUTHOR"
+    given-names: "TO BE COMPLETED"
+date-released: 2026-06-22
+

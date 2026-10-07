@@ -1,0 +1,140 @@
+display_period,registration_year,case_type,cases
+Before context-figure period,2004,Overført aktiv sak fra PPI,1
+Before context-figure period,2005,Overført aktiv sak fra PPI,1
+Before context-figure period,2006,Overført aktiv sak fra PPI,2
+Before context-figure period,2009,Overført aktiv sak fra PPI,3
+Before context-figure period,2010,Oppfølgingssak,1
+Before context-figure period,2010,Overført aktiv sak fra PPI,1
+Before context-figure period,2011,Overført aktiv sak fra PPI,3
+Before context-figure period,2011,Passiv logopedsak,1
+Before context-figure period,2012,Logoped,1
+Before context-figure period,2012,Overført aktiv sak fra PPI,3
+Before context-figure period,2012,Passiv logopedsak,3
+Before context-figure period,2013,Logoped,1
+Before context-figure period,2013,Oppfølgingssak,1
+Before context-figure period,2013,Overført aktiv sak fra PPI,8
+Before context-figure period,2014,Logoped,2
+Before context-figure period,2014,Oppfølgingssak,1
+Before context-figure period,2014,Overført aktiv sak fra PPI,7
+Before context-figure period,2015,Logoped,3
+Before context-figure period,2015,Oppfølgingssak,3
+Before context-figure period,2015,Overført aktiv sak fra PPI,9
+Before context-figure period,2015,Passiv logopedsak,2
+Before context-figure period,2016,Feilregistrering,1
+Before context-figure period,2016,Logoped,10
+Before context-figure period,2016,Oppfølgingssak,17
+Before context-figure period,2016,Overført aktiv sak fra PPI,20
+Before context-figure period,2016,Passiv logopedsak,4
+Before context-figure period,2017,Logoped,9
+Before context-figure period,2017,Oppfølgingssak,63
+Before context-figure period,2017,Overført aktiv sak fra PPI,55
+Before context-figure period,2017,Passiv logopedsak,1
+Before context-figure period,2017,Råd og veiledning,2
+Before context-figure period,2017,Utredning,1
+Before context-figure period,2018,Logoped,33
+Before context-figure period,2018,Oppfølgingssak,154
+Before context-figure period,2018,Overført aktiv sak fra PPI,139
+Before context-figure period,2018,Overført avsluttet sak fra PPI,1
+Before context-figure period,2018,Passiv logopedsak,7
+Before context-figure period,2018,Råd og veiledning,1
+Before context-figure period,2018,Sakkyndig vurdering,11
+Before context-figure period,2018,Utredning,1
+Before context-figure period,2019,Administrasjon,28
+Before context-figure period,2019,Feilregistrering,80
+Before context-figure period,2019,Henvisning,1
+Before context-figure period,2019,Logoped,184
+Before context-figure period,2019,Oppfølgingssak,754
+Before context-figure period,2019,Overført aktiv sak fra PPI,936
+Before context-figure period,2019,Overført avsluttet sak fra PPI,72
+Before context-figure period,2019,Passiv logopedsak,20
+Before context-figure period,2019,Psykolog,1
+Before context-figure period,2019,Råd og veiledning,21
+Before context-figure period,2019,Sakkyndig vurdering,521
+Before context-figure period,2019,Sakkyndig vurdering skole forlenget frist,1
+Before context-figure period,2019,Tidlig innsats personsak,1
+Before context-figure period,2019,Utredning,53
+Before context-figure period,2020,Administrasjon,13
+Context period before analytical sample,2020,Administrasjon,33
+Before context-figure period,2020,Feilregistrering,35
+Context period before analytical sample,2020,Feilregistrering,42
+Before context-figure period,2020,Henvisning,3
+Context period before analytical sample,2020,Henvisning,4
+Before context-figure period,2020,Logoped,77
+Context period before analytical sample,2020,Logoped,132
+Before context-figure period,2020,Oppfølgingssak,243
+Context period before analytical sample,2020,Oppfølgingssak,359
+Before context-figure period,2020,Overført aktiv sak fra PPI,391
+Context period before analytical sample,2020,Overført aktiv sak fra PPI,9
+Before context-figure period,2020,Overført avsluttet sak fra PPI,35
+Context period before analytical sample,2020,Overført avsluttet sak fra PPI,12
+Before context-figure period,2020,Passiv logopedsak,11
+Context period before analytical sample,2020,Passiv logopedsak,15
+Before context-figure period,2020,Råd og veiledning,11
+Context period before analytical sample,2020,Råd og veiledning,26
+Before context-figure period,2020,Sakkyndig vurdering,564
+Context period before analytical sample,2020,Sakkyndig vurdering,694
+Before context-figure period,2020,Tidlig innsats personsak,1
+Before context-figure period,2020,Utredning,45
+Context period before analytical sample,2020,Utredning,64
+Context period before analytical sample,2021,Administrasjon,38
+Context period before analytical sample,2021,Feilregistrering,74
+Context period before analytical sample,2021,Henvisning,7
+Context period before analytical sample,2021,Logoped,236
+Context period before analytical sample,2021,Oppfølgingssak,808
+Context period before analytical sample,2021,Overført aktiv sak fra PPI,5
+Context period before analytical sample,2021,Overført avsluttet sak fra PPI,25
+Context period before analytical sample,2021,Passiv logopedsak,50
+Context period before analytical sample,2021,Råd og veiledning,43
+Context period before analytical sample,2021,Sakkyndig vurdering,1186
+Context period before analytical sample,2021,Sakkyndig vurdering barnehage forlenget frist,1
+Context period before analytical sample,2021,Sakkyndig vurdering skole forlenget frist,3
+Context period before analytical sample,2021,Tidlig innsats personsak,2
+Context period before analytical sample,2021,Utredning,109
+Context period before analytical sample,2022,Administrasjon,24
+Context period before analytical sample,2022,Feilregistrering,56
+Context period before analytical sample,2022,Logoped,167
+Context period before analytical sample,2022,Oppfølgingssak,751
+Context period before analytical sample,2022,Overført aktiv sak fra PPI,1
+Context period before analytical sample,2022,Overført avsluttet sak fra PPI,5
+Context period before analytical sample,2022,Passiv logopedsak,27
+Context period before analytical sample,2022,Råd og veiledning,30
+Context period before analytical sample,2022,Sakkyndig vurdering,1056
+Context period before analytical sample,2022,Sakkyndig vurdering barnehage forlenget frist,1
+Context period before analytical sample,2022,Sakkyndig vurdering skole forlenget frist,2
+Context period before analytical sample,2022,Tidlig innsats personsak,210
+Context period before analytical sample,2022,Utredning,107
+Analytical-sample calendar period,2023,Administrasjon,9
+Analytical-sample calendar period,2023,Feilregistrering,46
+Analytical-sample calendar period,2023,Logoped,174
+Analytical-sample calendar period,2023,Oppfølgingssak,570
+Analytical-sample calendar period,2023,Overført aktiv sak fra PPI,1
+Analytical-sample calendar period,2023,Overført avsluttet sak fra PPI,2
+Analytical-sample calendar period,2023,Passiv logopedsak,34
+Analytical-sample calendar period,2023,Råd og veiledning,21
+Analytical-sample calendar period,2023,Sakkyndig vurdering,1263
+Analytical-sample calendar period,2023,Sakkyndig vurdering barnehage forlenget frist,3
+Analytical-sample calendar period,2023,Sakkyndig vurdering skole forlenget frist,2
+Analytical-sample calendar period,2023,Tidlig innsats personsak,609
+Analytical-sample calendar period,2023,Utredning,114
+Analytical-sample calendar period,2024,Administrasjon,14
+Analytical-sample calendar period,2024,Feilregistrering,32
+Analytical-sample calendar period,2024,Logoped,166
+Analytical-sample calendar period,2024,Oppfølgingssak,463
+Analytical-sample calendar period,2024,Overført avsluttet sak fra PPI,1
+Analytical-sample calendar period,2024,Passiv logopedsak,24
+Analytical-sample calendar period,2024,Råd og veiledning,26
+Analytical-sample calendar period,2024,Sakkyndig vurdering,1029
+Analytical-sample calendar period,2024,Sakkyndig vurdering barnehage forlenget frist,3
+Analytical-sample calendar period,2024,Sakkyndig vurdering skole forlenget frist,3
+Analytical-sample calendar period,2024,Tidlig innsats personsak,633
+Analytical-sample calendar period,2024,Utredning,117
+Analytical-sample calendar period,2025,Administrasjon,23
+Analytical-sample calendar period,2025,Feilregistrering,10
+Analytical-sample calendar period,2025,Logoped,63
+Analytical-sample calendar period,2025,Oppfølgingssak,152
+Analytical-sample calendar period,2025,Passiv logopedsak,1
+Analytical-sample calendar period,2025,Råd og veiledning,13
+Analytical-sample calendar period,2025,Sakkyndig vurdering,454
+Analytical-sample calendar period,2025,Sakkyndig vurdering skole forlenget frist,1
+Analytical-sample calendar period,2025,Tidlig innsats personsak,328
+Analytical-sample calendar period,2025,Utredning,42
