@@ -1,8 +1,14 @@
 # Tett pa transition pathways reproducibility package
 
-This repository contains the reproducibility materials for the manuscript on transitions from early-intervention PPT cases to later expert-assessment cases in Trondheim.
+This repository contains the reproducibility materials for:
+
+> Lillebø, O. S. (2026). From early intervention to formal expert assessment: administrative transition pathways in a Norwegian educational-psychological service. *European Journal of Special Needs Education*. https://doi.org/10.1080/08856257.2026.2769866
 
 The repository is designed for transparent review of the analysis workflow. It does not contain the underlying individual-level administrative case data.
+
+## Licence
+
+Code in `scripts/` is released under the MIT Licence (see `LICENSE`). The aggregate outputs in `outputs/` and the documentation in `docs/` are released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) — reuse them freely with attribution to the article above.
 
 ## Contents
 

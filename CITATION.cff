@@ -8,6 +8,7 @@ abstract: >-
   Psychological Service (2023-2025). The restricted person-level source records
   are not included; see docs/DATA_ACCESS.md.
 type: software
+license: MIT
 authors:
   - family-names: "Lillebø"
     given-names: "Otto Sevaldson"
@@ -21,3 +22,15 @@ keywords:
   - administrative data
   - survival analysis
 date-released: 2026-11-25
+preferred-citation:
+  type: article
+  title: >-
+    From early intervention to formal expert assessment: administrative
+    transition pathways in a Norwegian educational-psychological service
+  authors:
+    - family-names: "Lillebø"
+      given-names: "Otto Sevaldson"
+      orcid: "https://orcid.org/0000-0001-8952-3948"
+  journal: "European Journal of Special Needs Education"
+  year: 2026
+  doi: "10.1080/08856257.2026.2769866"
