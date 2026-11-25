@@ -6,5 +6,5 @@ Excluded: same-day expert assessment,1
 Excluded: age outside 0-16 or unavailable,0
 Main analytical sample,1468
 Main sample: earlier observed PPT case on an earlier date,97
-Main sample: another case type precedes index TI on the same first observed date,13
-Strict sample: early intervention is first observed PPT case,1358
+Main sample: another case type registered on the same first observed date,17
+Strict sample: early intervention is first observed PPT case,1354

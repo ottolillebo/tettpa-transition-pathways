@@ -1,0 +1,148 @@
+service_tier_main,presentation_group,cohort_half,n,events,suppressed
+Kindergarten,Not clarified,2023H1,40,15,FALSE
+Kindergarten,Not clarified,2023H2,30,7,FALSE
+Kindergarten,Not clarified,2024H1,53,10,FALSE
+Kindergarten,Not clarified,2024H2,22,5,FALSE
+Kindergarten,Not clarified,2025H1,21,2,FALSE
+Kindergarten,Attention/neurodevelopment,2023H1,5,1,FALSE
+Kindergarten,Attention/neurodevelopment,2023H2,,,TRUE
+Kindergarten,Attention/neurodevelopment,2024H1,6,0,FALSE
+Kindergarten,Attention/neurodevelopment,2024H2,,,TRUE
+Kindergarten,Attention/neurodevelopment,2025H1,17,0,FALSE
+Kindergarten,Language/speech/communication,2023H1,21,4,FALSE
+Kindergarten,Language/speech/communication,2023H2,28,7,FALSE
+Kindergarten,Language/speech/communication,2024H1,32,6,FALSE
+Kindergarten,Language/speech/communication,2024H2,25,2,FALSE
+Kindergarten,Language/speech/communication,2025H1,18,0,FALSE
+Kindergarten,Learning/academic,2023H1,6,4,FALSE
+Kindergarten,Learning/academic,2024H1,6,5,FALSE
+Kindergarten,Learning/academic,2024H2,7,3,FALSE
+Kindergarten,Learning/academic,2025H1,,,TRUE
+Kindergarten,Social/emotional/interaction,2023H1,12,5,FALSE
+Kindergarten,Social/emotional/interaction,2023H2,19,10,FALSE
+Kindergarten,Social/emotional/interaction,2024H1,17,8,FALSE
+Kindergarten,Social/emotional/interaction,2024H2,10,4,FALSE
+Kindergarten,Social/emotional/interaction,2025H1,16,0,FALSE
+Kindergarten,Complex/medical/other,2023H1,,,TRUE
+Kindergarten,Complex/medical/other,2023H2,5,2,FALSE
+Kindergarten,Complex/medical/other,2024H1,8,4,FALSE
+Kindergarten,Complex/medical/other,2024H2,,,TRUE
+Kindergarten,Complex/medical/other,2025H1,,,TRUE
+Kindergarten,Missing,2024H2,,,TRUE
+Kindergarten,Missing,2025H1,7,0,FALSE
+Primary school,Not clarified,2023H1,28,7,FALSE
+Primary school,Not clarified,2023H2,30,4,FALSE
+Primary school,Not clarified,2024H1,38,1,FALSE
+Primary school,Not clarified,2024H2,18,3,FALSE
+Primary school,Not clarified,2025H1,30,0,FALSE
+Primary school,Attention/neurodevelopment,2023H1,50,5,FALSE
+Primary school,Attention/neurodevelopment,2023H2,49,5,FALSE
+Primary school,Attention/neurodevelopment,2024H1,57,5,FALSE
+Primary school,Attention/neurodevelopment,2024H2,42,3,FALSE
+Primary school,Attention/neurodevelopment,2025H1,39,2,FALSE
+Primary school,Language/speech/communication,2023H1,5,1,FALSE
+Primary school,Language/speech/communication,2023H2,8,3,FALSE
+Primary school,Language/speech/communication,2024H1,14,0,FALSE
+Primary school,Language/speech/communication,2024H2,,,TRUE
+Primary school,Language/speech/communication,2025H1,,,TRUE
+Primary school,Learning/academic,2023H1,11,3,FALSE
+Primary school,Learning/academic,2023H2,6,3,FALSE
+Primary school,Learning/academic,2024H1,8,5,FALSE
+Primary school,Learning/academic,2024H2,6,4,FALSE
+Primary school,Learning/academic,2025H1,7,0,FALSE
+Primary school,Social/emotional/interaction,2023H1,15,2,FALSE
+Primary school,Social/emotional/interaction,2023H2,18,8,FALSE
+Primary school,Social/emotional/interaction,2024H1,18,4,FALSE
+Primary school,Social/emotional/interaction,2024H2,7,0,FALSE
+Primary school,Social/emotional/interaction,2025H1,15,0,FALSE
+Primary school,Complex/medical/other,2023H1,13,4,FALSE
+Primary school,Complex/medical/other,2023H2,10,5,FALSE
+Primary school,Complex/medical/other,2024H1,10,1,FALSE
+Primary school,Complex/medical/other,2024H2,7,5,FALSE
+Primary school,Complex/medical/other,2025H1,,,TRUE
+Primary school,Missing,2024H1,,,TRUE
+Primary school,Missing,2024H2,,,TRUE
+Primary school,Missing,2025H1,,,TRUE
+Lower secondary,Not clarified,2023H1,,,TRUE
+Lower secondary,Not clarified,2023H2,,,TRUE
+Lower secondary,Not clarified,2024H1,5,2,FALSE
+Lower secondary,Not clarified,2024H2,,,TRUE
+Lower secondary,Not clarified,2025H1,,,TRUE
+Lower secondary,Attention/neurodevelopment,2023H1,17,2,FALSE
+Lower secondary,Attention/neurodevelopment,2023H2,14,2,FALSE
+Lower secondary,Attention/neurodevelopment,2024H1,14,0,FALSE
+Lower secondary,Attention/neurodevelopment,2024H2,10,1,FALSE
+Lower secondary,Attention/neurodevelopment,2025H1,11,1,FALSE
+Lower secondary,Language/speech/communication,2023H1,,,TRUE
+Lower secondary,Language/speech/communication,2023H2,,,TRUE
+Lower secondary,Language/speech/communication,2024H1,,,TRUE
+Lower secondary,Language/speech/communication,2024H2,,,TRUE
+Lower secondary,Language/speech/communication,2025H1,,,TRUE
+Lower secondary,Learning/academic,2023H1,5,1,FALSE
+Lower secondary,Learning/academic,2023H2,,,TRUE
+Lower secondary,Learning/academic,2024H1,,,TRUE
+Lower secondary,Learning/academic,2024H2,,,TRUE
+Lower secondary,Learning/academic,2025H1,,,TRUE
+Lower secondary,Social/emotional/interaction,2023H1,7,3,FALSE
+Lower secondary,Social/emotional/interaction,2023H2,7,4,FALSE
+Lower secondary,Social/emotional/interaction,2024H1,8,4,FALSE
+Lower secondary,Social/emotional/interaction,2024H2,,,TRUE
+Lower secondary,Social/emotional/interaction,2025H1,,,TRUE
+Lower secondary,Complex/medical/other,2023H1,5,4,FALSE
+Lower secondary,Complex/medical/other,2023H2,,,TRUE
+Lower secondary,Complex/medical/other,2024H1,6,2,FALSE
+Lower secondary,Missing,2025H1,9,0,FALSE
+Combined school,Not clarified,2023H1,6,4,FALSE
+Combined school,Not clarified,2023H2,15,3,FALSE
+Combined school,Not clarified,2024H1,10,1,FALSE
+Combined school,Not clarified,2024H2,8,0,FALSE
+Combined school,Not clarified,2025H1,8,0,FALSE
+Combined school,Attention/neurodevelopment,2023H1,,,TRUE
+Combined school,Attention/neurodevelopment,2023H2,9,0,FALSE
+Combined school,Attention/neurodevelopment,2024H1,15,0,FALSE
+Combined school,Attention/neurodevelopment,2024H2,,,TRUE
+Combined school,Attention/neurodevelopment,2025H1,16,0,FALSE
+Combined school,Language/speech/communication,2023H1,,,TRUE
+Combined school,Language/speech/communication,2023H2,,,TRUE
+Combined school,Language/speech/communication,2024H1,,,TRUE
+Combined school,Language/speech/communication,2024H2,,,TRUE
+Combined school,Language/speech/communication,2025H1,,,TRUE
+Combined school,Learning/academic,2024H1,,,TRUE
+Combined school,Social/emotional/interaction,2023H1,,,TRUE
+Combined school,Social/emotional/interaction,2024H1,,,TRUE
+Combined school,Social/emotional/interaction,2024H2,,,TRUE
+Combined school,Social/emotional/interaction,2025H1,,,TRUE
+Combined school,Complex/medical/other,2023H1,,,TRUE
+Combined school,Complex/medical/other,2023H2,,,TRUE
+Combined school,Missing,2024H2,,,TRUE
+Combined school,Missing,2025H1,5,0,FALSE
+Unknown,Not clarified,2023H1,17,3,FALSE
+Unknown,Not clarified,2023H2,9,3,FALSE
+Unknown,Not clarified,2024H1,16,1,FALSE
+Unknown,Not clarified,2024H2,5,1,FALSE
+Unknown,Not clarified,2025H1,10,0,FALSE
+Unknown,Attention/neurodevelopment,2023H1,,,TRUE
+Unknown,Attention/neurodevelopment,2023H2,7,0,FALSE
+Unknown,Attention/neurodevelopment,2024H1,9,2,FALSE
+Unknown,Attention/neurodevelopment,2024H2,9,0,FALSE
+Unknown,Attention/neurodevelopment,2025H1,14,0,FALSE
+Unknown,Language/speech/communication,2023H1,,,TRUE
+Unknown,Language/speech/communication,2023H2,,,TRUE
+Unknown,Language/speech/communication,2024H1,5,0,FALSE
+Unknown,Language/speech/communication,2024H2,5,0,FALSE
+Unknown,Language/speech/communication,2025H1,6,1,FALSE
+Unknown,Learning/academic,2023H2,,,TRUE
+Unknown,Learning/academic,2024H2,5,1,FALSE
+Unknown,Learning/academic,2025H1,,,TRUE
+Unknown,Social/emotional/interaction,2023H1,,,TRUE
+Unknown,Social/emotional/interaction,2023H2,,,TRUE
+Unknown,Social/emotional/interaction,2024H1,,,TRUE
+Unknown,Social/emotional/interaction,2024H2,,,TRUE
+Unknown,Social/emotional/interaction,2025H1,,,TRUE
+Unknown,Complex/medical/other,2023H1,,,TRUE
+Unknown,Complex/medical/other,2023H2,,,TRUE
+Unknown,Complex/medical/other,2024H1,,,TRUE
+Unknown,Complex/medical/other,2024H2,,,TRUE
+Unknown,Complex/medical/other,2025H1,6,1,FALSE
+Unknown,Missing,2024H2,,,TRUE
+Unknown,Missing,2025H1,9,2,FALSE

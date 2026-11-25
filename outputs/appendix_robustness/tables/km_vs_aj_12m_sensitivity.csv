@@ -1,0 +1,4 @@
+estimate,value,percent
+"Kaplan-Meier: later expert assessment, censoring only at extract date",0.21650836867615997,21.650836867615997
+Aalen-Johansen sensitivity: expert assessment before any other later PPT case,0.20697124425799254,20.697124425799256
+"Absolute difference, AJ minus KM",-0.009537124418167425,-0.9537124418167425

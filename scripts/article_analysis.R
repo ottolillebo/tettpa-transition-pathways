@@ -13,6 +13,11 @@ suppressPackageStartupMessages({
   library(broom)
 })
 
+# Shared data-preparation helpers, also used by appendix_robustness_analysis.R.
+# Kept in one file so a classification cannot be fixed in one script and missed in
+# the other. Run from the package root: Rscript scripts/article_analysis.R
+source("scripts/shared_functions.R")
+
 options(stringsAsFactors = FALSE, width = 160)
 
 data_file <- Sys.getenv(
@@ -80,50 +85,6 @@ write_lines(
   file.path(output_dir, "figure_notes_for_word.txt")
 )
 
-min_date_or_na <- function(x) {
-  x <- x[!is.na(x)]
-  if (length(x) == 0) as.Date(NA) else min(x)
-}
-
-classify_service_tier <- function(organization) {
-  lower_secondary <- c(
-    "Blussuvoll", "Charlottenlund ungdomsskole", "Hoeggen",
-    "Huseby ungdomsskole", "Klæbu", "Markaplassen", "Rosenborg",
-    "Selsbakk", "Sunnland", "Sverresborg", "Ugla", "Åsheim ungdomsskole"
-  )
-  combined <- c("Flatåsen", "Lade", "Rosten", "Sjetne", "Spongdal", "Tonstad")
-  org <- str_squish(as.character(organization))
-  case_when(
-    is.na(org) | org == "" ~ NA_character_,
-    str_detect(org, regex("barne- og familietjenest|skolehelsetjenest|trondheimshjelpa|ikke\\s*i\\s*bruk|ikkeibruk", ignore_case = TRUE)) ~ NA_character_,
-    str_detect(org, regex("barnehage|\\bbhg\\b|familiebarnehage|læringsverkstedet", ignore_case = TRUE)) ~ "Kindergarten",
-    str_detect(org, regex("ungdomsskole", ignore_case = TRUE)) ~ "Lower secondary",
-    str_detect(org, regex(paste(lower_secondary, collapse = "|"), ignore_case = TRUE)) ~ "Lower secondary",
-    str_detect(org, regex(paste(combined, collapse = "|"), ignore_case = TRUE)) ~ "Combined school",
-    TRUE ~ "Primary school"
-  )
-}
-
-classify_presentation <- function(x) {
-  case_when(
-    is.na(x) | x == "" ~ "Missing",
-    x %in% c("Ikke avklart", "Z- Ikke tildelt") ~ "Not clarified",
-    x %in% c("Konsentrasjon og oppmerksomhet", "Nevroutviklingsforstyrrelser/syndrom") ~
-      "Attention/neurodevelopment",
-    x %in% c("Språk-/kommunikasjonsvansker", "Talevansker", "Hørsel/Koda", "KODA") ~
-      "Language/speech/communication",
-    x %in% c("Lærevansker/Fagvansker", "Lese- /skrivevansker", "Matematikkvansker",
-             "Forsinket utvikling", "V-Generelle lærevansker") ~
-      "Learning/academic",
-    x %in% c("Sosiale/emosjonelle vansker", "Samspill-/Sosial spekter vansker",
-             "Samspillvansker", "Skolefravær", "Traume", "V-Psykisk lidelse") ~
-      "Social/emotional/interaction",
-    TRUE ~ "Complex/medical/other"
-  )
-}
-
-semester <- function(x) paste0(year(x), "H", if_else(month(x) <= 6, "1", "2"))
-
 article_theme <- function(base_size = 11) {
   theme_minimal(base_size = base_size) +
     theme(
@@ -135,27 +96,6 @@ article_theme <- function(base_size = 11) {
       strip.text = element_text(face = "bold", hjust = 0),
       legend.position = "none"
     )
-}
-
-case_type_group <- function(x) {
-  case_when(
-    x == "Sakkyndig vurdering" ~ "Expert assessment",
-    x == "Tidlig innsats personsak" ~ "New early-intervention case",
-    str_detect(x, regex("oppfølging", ignore_case = TRUE)) ~ "Follow-up case",
-    str_detect(x, regex("utredning", ignore_case = TRUE)) ~ "Other assessment case",
-    TRUE ~ "Other PPT case"
-  )
-}
-
-classify_organization_arena <- function(organization) {
-  org <- str_squish(as.character(organization))
-  lower <- str_to_lower(org)
-  case_when(
-    is.na(org) | org == "" ~ "Not registered / other",
-    grepl("barnehage|\\bbhg\\b|familiebarnehage|læringsverkstedet", lower) ~ "Kindergarten",
-    grepl("skole|ungdomsskole|barneskole|oppvekstsenter|\\bschool\\b", lower) ~ "School",
-    TRUE ~ "Not registered / other"
-  )
 }
 
 raw <- read_excel(data_file, sheet = 1) |>
@@ -226,7 +166,14 @@ person_history <- raw |>
   group_by(person_id) |>
   summarise(
     first_observed_date = min_date_or_na(date_new),
-    first_observed_type = first(case_type),
+    # Whether any case type other than early intervention shares the child's first
+    # observed date. The records carry dates, not timestamps, so the order of cases
+    # within a day is not observable. An earlier version read the order off the case
+    # number, which is an assignment identifier and says nothing about chronology.
+    first_date_has_other_case = any(
+      date_new == min_date_or_na(date_new) & case_type != "Tidlig innsats personsak",
+      na.rm = TRUE
+    ),
     first_ti_date = min_date_or_na(date_new[case_type == "Tidlig innsats personsak"]),
     first_sv_date = min_date_or_na(date_new[case_type == "Sakkyndig vurdering"]),
     .groups = "drop"
@@ -243,7 +190,10 @@ baseline_all <- raw |>
     first_ti_in_period = date_new >= analysis_start & date_new <= administrative_end,
     prior_sv = !is.na(first_sv_date) & first_sv_date < date_new,
     same_day_sv = !is.na(first_sv_date) & first_sv_date == date_new,
-    first_case_is_ti = first_observed_type == "Tidlig innsats personsak",
+    # Strict risk set: the early-intervention case is on the child's first observed
+    # date, and no other case type was registered on that date. The rule does not
+    # claim to know which came first within the day, because that is unobservable.
+    first_case_is_ti = first_observed_date == date_new & !first_date_has_other_case,
     age_at_index = age_at_index_candidate,
     valid_age = !is.na(age_at_index) & age_at_index >= 0 & age_at_index <= 16
   )
@@ -257,7 +207,7 @@ flow <- tibble(
     "Excluded: age outside 0-16 or unavailable",
     "Main analytical sample",
     "Main sample: earlier observed PPT case on an earlier date",
-    "Main sample: another case type precedes index TI on the same first observed date",
+    "Main sample: another case type registered on the same first observed date",
     "Strict sample: early intervention is first observed PPT case"
   ),
   n = c(
@@ -289,7 +239,7 @@ baseline <- baseline_all |>
     service_tier,
     presentation_group,
     main_category_original,
-    cohort_half = semester(t0),
+    cohort_half = entry_semester(t0),
     cohort_quarter = paste0(year(t0), "Q", quarter(t0)),
     first_case_is_ti,
     prior_other_case = first_observed_date < t0
@@ -337,9 +287,13 @@ write_csv(tibble(
   n_organizations = n_distinct(risk$organization[!is.na(risk$organization) & risk$organization != ""])
 ), file.path(table_dir, "sample_summary.csv"))
 
+# The observed span is reported to the month, not the day: the exact minimum and
+# maximum are one individual child's registration date each, and the package
+# keeps row-level dates out (REPRODUCIBILITY.md). The three boundaries below are
+# study constants, not observations, so they stay exact.
 write_csv(tibble(
-  earliest_observed_registration = min(raw$date_new, na.rm = TRUE),
-  latest_observed_registration = max(raw$date_new, na.rm = TRUE),
+  earliest_observed_registration_month = format(min(raw$date_new, na.rm = TRUE), "%Y-%m"),
+  latest_observed_registration_month = format(max(raw$date_new, na.rm = TRUE), "%Y-%m"),
   analysis_start = analysis_start,
   administrative_end = administrative_end,
   education_act_start = education_act_start
@@ -347,7 +301,7 @@ write_csv(tibble(
 
 baseline_completeness <- tibble(
   variable = c(
-    "Person identifier", "Index date", "Birth year", "Age at index date",
+    "Person identifier", "Index date", "Birth year", "Age at early-intervention registration",
     "Administratively recorded sex", "PPT district", "Baseline organisation",
     "Service tier", "Original presenting concern", "Grouped presenting concern"
   ),
@@ -525,7 +479,7 @@ table1_categorical <- bind_rows(
   ungroup()
 
 table1_continuous <- tibble(
-  variable = c("Age at index date", "Follow-up, months", "Observed transitions to expert assessment"),
+  variable = c("Age at early-intervention registration", "Follow-up, months", "Observed transitions to expert assessment"),
   statistic = c(
     sprintf("%.1f (%.1f-%.1f)", median(risk$age_at_index), quantile(risk$age_at_index, .25), quantile(risk$age_at_index, .75)),
     sprintf("%.1f (%.1f-%.1f)", median(risk$followup_months), quantile(risk$followup_months, .25), quantile(risk$followup_months, .75)),
@@ -774,7 +728,10 @@ write_csv(
 support <- risk_12m |>
   group_by(service_tier_main, presentation_group, cohort_half) |>
   summarise(n = n(), events = sum(event), .groups = "drop")
-write_csv(support, file.path(diagnostic_dir, "model_support_cells.csv"))
+# The published copy is cell-suppressed; the summary below is still computed
+# from the full `support` object, since it only reports how many cells are
+# sparse and not which children sit in them.
+write_csv(suppress_small_cells(support), file.path(diagnostic_dir, "model_support_cells.csv"))
 write_csv(tibble(
   support_cells = nrow(support),
   cells_below_10_children = sum(support$n < 10),
@@ -784,7 +741,8 @@ write_csv(tibble(
 ), file.path(diagnostic_dir, "model_support_summary.csv"))
 write_csv(
   risk |> group_by(age_at_index, service_tier_main) |>
-    summarise(n = n(), events = sum(event), .groups = "drop"),
+    summarise(n = n(), events = sum(event), .groups = "drop") |>
+    suppress_small_cells(),
   file.path(diagnostic_dir, "age_service_support.csv")
 )
 

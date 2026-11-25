@@ -1,0 +1,10 @@
+conclusion_tested,robustness_check,output_file,main_result,appendix_priority
+Absolute 12-month transition level,Observed 12-month pathways among children with complete follow-up,tables/observed_pathways_12m.csv,198/905 = 21.9% had expert assessment within 12 months,Core appendix
+Absolute 12-month transition level under unequal follow-up,"Kaplan-Meier estimates at 6, 12, 18 and 24 months",tables/km_transition_times.csv,12-month cumulative transition estimate = 21.7%,Core appendix
+Absolute risk not inflated by intervening other PPT registrations,Aalen-Johansen first-event sensitivity,tables/km_vs_aj_12m_sensitivity.csv,Aalen-Johansen 20.7% versus Kaplan-Meier 21.7%,Core appendix
+Administrative censoring concentrated in late-entry cohorts,Potential follow-up among children without registered expert assessment,tables/censoring_by_potential_followup.csv,501/1182 non-events had less than 12 months potential follow-up,Core appendix
+Presenting concern is the strongest patterned association,Strict first-recorded PPT-contact risk set,article_analysis.R: cox_sensitivity_models.csv,Learning/academic HR 3.13; social/emotional HR 2.12; attention/neurodevelopment HR 0.58,Core appendix
+District-context null not driven by a single district,Leave-one-district-out,article_analysis.R: leave_one_district_out.csv,District-context HR range 0.84 to 1.25,Core appendix
+District-context null not hiding district-specific deviations,Separate district indicators,tables/additional_cox_robustness.csv,District-specific point estimates are close to the reference district,Secondary appendix
+District-context interpretation similar across entry-window definitions,Alternative analysis starts: 2022-07-01 and 2023-07-01,tables/additional_cox_robustness.csv,Proximity-model HR 1.09 and 1.02,Secondary appendix
+Proportional-hazards assumption is not clearly violated,Schoenfeld residual tests,article_analysis.R: cox_ph_tests.csv,Global p = 0.145; age spline p = 0.058,Core appendix

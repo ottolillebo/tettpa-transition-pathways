@@ -1,0 +1,55 @@
+age_at_index,service_tier_main,n,events,suppressed
+0,Kindergarten,,,TRUE
+1,Kindergarten,6,3,FALSE
+2,Kindergarten,50,19,FALSE
+2,Unknown,8,3,FALSE
+3,Kindergarten,120,41,FALSE
+3,Unknown,12,5,FALSE
+4,Kindergarten,107,31,FALSE
+4,Primary school,,,TRUE
+4,Unknown,25,7,FALSE
+5,Kindergarten,113,21,FALSE
+5,Primary school,22,13,FALSE
+5,Combined school,,,TRUE
+5,Unknown,23,1,FALSE
+6,Kindergarten,56,1,FALSE
+6,Primary school,39,7,FALSE
+6,Combined school,5,0,FALSE
+6,Unknown,7,0,FALSE
+7,Primary school,55,8,FALSE
+7,Combined school,6,2,FALSE
+7,Unknown,,,TRUE
+8,Kindergarten,,,TRUE
+8,Primary school,84,13,FALSE
+8,Combined school,10,3,FALSE
+8,Unknown,15,2,FALSE
+9,Kindergarten,,,TRUE
+9,Primary school,89,18,FALSE
+9,Combined school,13,3,FALSE
+9,Unknown,14,0,FALSE
+10,Primary school,79,14,FALSE
+10,Combined school,14,0,FALSE
+10,Unknown,9,0,FALSE
+11,Primary school,92,13,FALSE
+11,Combined school,13,1,FALSE
+11,Unknown,11,0,FALSE
+12,Primary school,71,5,FALSE
+12,Lower secondary,9,3,FALSE
+12,Combined school,17,2,FALSE
+12,Unknown,7,0,FALSE
+13,Primary school,31,3,FALSE
+13,Lower secondary,27,7,FALSE
+13,Combined school,6,1,FALSE
+13,Unknown,8,0,FALSE
+14,Primary school,5,0,FALSE
+14,Lower secondary,50,12,FALSE
+14,Combined school,11,1,FALSE
+14,Unknown,10,1,FALSE
+15,Primary school,,,TRUE
+15,Lower secondary,55,14,FALSE
+15,Combined school,15,2,FALSE
+15,Unknown,11,0,FALSE
+16,Primary school,,,TRUE
+16,Lower secondary,13,1,FALSE
+16,Combined school,6,0,FALSE
+16,Unknown,5,0,FALSE

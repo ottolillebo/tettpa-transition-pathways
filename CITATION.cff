@@ -1,9 +1,23 @@
 cff-version: 1.2.0
 message: "If you use this reproducibility package, please cite the associated manuscript."
-title: "Tett pa transition pathways reproducibility package"
+title: "Tett på transition pathways reproducibility package"
+abstract: >-
+  Analysis code, aggregate result tables, model diagnostics and publication
+  figures for a study of administrative transition pathways from early
+  intervention to formal expert assessment in Trondheim Educational
+  Psychological Service (2023-2025). The restricted person-level source records
+  are not included; see docs/DATA_ACCESS.md.
 type: software
 authors:
-  - family-names: "AUTHOR"
-    given-names: "TO BE COMPLETED"
-date-released: 2026-06-22
-
+  - family-names: "Lillebø"
+    given-names: "Otto Sevaldson"
+    email: "otto.lillebo@nifu.no"
+    orcid: "https://orcid.org/0000-0001-8952-3948"
+    affiliation: "Nordic Institute for Studies in Innovation, Research and Education (NIFU)"
+keywords:
+  - educational psychological service
+  - early intervention
+  - expert assessment
+  - administrative data
+  - survival analysis
+date-released: 2026-11-25

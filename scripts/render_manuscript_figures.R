@@ -48,6 +48,14 @@ p_pathways <- pathway_summary_12m |>
         "No later PPT case registered",
         "Other later PPT case, no expert assessment",
         "Expert assessment registered"
+      ),
+      # The CSV keeps the Norwegian abbreviation the analysis wrote; the manuscript
+      # consolidated PPT to EPS in July 2026. Relabelled here so the figure matches the
+      # text without rerunning the analysis.
+      labels = c(
+        "No later EPS case registered",
+        "Other later EPS case, no expert assessment",
+        "Expert assessment registered"
       )
     ),
     label = sprintf("%.1f%%  (n = %s)", percent, comma(n)),
@@ -229,6 +237,11 @@ adjusted_figure_data <- standardized_12m |>
   filter(variable %in% c("presentation_group", "tett_pa"), level != "Missing") |>
   left_join(group_counts, by = c("variable", "level")) |>
   mutate(
+    level = recode(
+      level,
+      "Tett på districts" = "Proximity-model districts",
+      "Other PPT districts" = "Other districts"
+    ),
     panel = recode(
       variable,
       presentation_group = "Presenting concern",
