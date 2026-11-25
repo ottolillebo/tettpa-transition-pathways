@@ -9,6 +9,8 @@ abstract: >-
   are not included; see docs/DATA_ACCESS.md.
 type: software
 license: MIT
+doi: "10.5281/zenodo.24533464"
+repository-code: "https://github.com/ottolillebo/tettpa-transition-pathways"
 authors:
   - family-names: "Lillebø"
     given-names: "Otto Sevaldson"

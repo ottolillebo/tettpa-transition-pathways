@@ -1,8 +1,12 @@
 # README for "From early intervention to formal expert assessment: administrative transition pathways in a Norwegian educational-psychological service"
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24533464.svg)](https://doi.org/10.5281/zenodo.24533464)
+
 Reproducibility package for:
 
 > Lillebø, O. S. (2026). From early intervention to formal expert assessment: administrative transition pathways in a Norwegian educational-psychological service. *European Journal of Special Needs Education*. https://doi.org/10.1080/08856257.2026.2769866
+
+Archived at Zenodo. The badge above resolves to the latest version; the version archived as published is [10.5281/zenodo.24533465](https://doi.org/10.5281/zenodo.24533465), which is the identifier cited in the article's data availability statement.
 
 This README follows the [Social Science Data Editors template](https://github.com/social-science-data-editors/template_README).
 
