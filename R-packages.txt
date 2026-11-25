@@ -10,4 +10,10 @@ ggplot2
 survival
 splines
 broom
+scales
+tibble
 
+# Optional. The two analyses that use these are exploratory, are not reported in
+# the article, and skip silently when the package is absent. See README.md.
+mice
+rstpm2
