@@ -11,6 +11,7 @@ type: software
 license: MIT
 doi: "10.5281/zenodo.24533464"
 repository-code: "https://github.com/ottolillebo/tettpa-transition-pathways"
+version: "v1.1.0"
 authors:
   - family-names: "Lillebø"
     given-names: "Otto Sevaldson"
@@ -23,7 +24,7 @@ keywords:
   - expert assessment
   - administrative data
   - survival analysis
-date-released: 2026-11-25
+date-released: 2026-11-26
 preferred-citation:
   type: article
   title: >-

@@ -4,6 +4,8 @@
 
 Lillebø, O. S. (2026). From early intervention to formal expert assessment: administrative transition pathways in a Norwegian educational-psychological service. *European Journal of Special Needs Education*. https://doi.org/10.1080/08856257.2026.2769866
 
+The badge resolves to the latest version. The article cites [10.5281/zenodo.24553001](https://doi.org/10.5281/zenodo.24553001), which is this package at tag `v1.1.0`.
+
 The code follows 1,468 children aged 0–16 from an early-intervention registration with Trondheim Educational Psychological Service to a later formal expert assessment, using Cox models and Kaplan-Meier estimates with a cluster bootstrap over organisations. Two scripts produce every number in the article. A third redraws the figures from the deposited aggregates, without the restricted data.
 
 ## Data availability
